@@ -1,6 +1,8 @@
 body {
 	 height: 100%;
+   width: auto;
 	background-image: linear-gradient(0deg, #355C7D 10%, #F67280 40%, #F8B195 100%) !important;
+   background-repeat: no-repeat;
 }
 
 
