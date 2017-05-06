@@ -1,1 +1,73 @@
-<h1> HOME </h1>
+<html>
+    <head>
+        <script src="http://www.nihilogic.dk/labs/canvas2image/canvas2image.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="js/index.js"></script> 
+        <script src="js/FileSaver.js"></script> 
+        <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet"> 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    </head>
+
+    <body>
+    
+
+ <div class="centered">
+    
+<div class="container lastpost">
+    <h4 id="lastpt">COLORFUL POSTS</h4>
+    <hr>
+</div>
+        <div class="inner">
+    
+<tr id="rq17">
+
+
+  <td class='qtext'><input id="charsLeft" style="float: left; border: none;color:#F67280;font-size:12pt;font-style:italic;" readonly type="text" name="q17length" size="3" maxlength="3" value="100"><br/><textarea  class="form-control" name="q17" id="textbox_id" rows="2" cols="" maxlength="100"></textarea></td>
+</tr><br>
+ 
+      
+        <canvas width=578 height=200 id="thecanvas"></canvas>
+
+
+        <div id="buttons-group">
+
+
+
+ <button  onclick="to_image()" class="flat-butt flat-info-butt"/><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+       
+ <button onclick="download()" class="flat-butt flat-primary-butt" /><span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"> </span></button>
+       
+     
+
+ <button  onclick="reset()" class="flat-butt flat-danger-butt"/><span class="glyphicon glyphicon-trash" aria-hidden="true"> </span></button>
+
+  <button  onclick="white()" class="flat-butt flat-danger-butt3"/><span class="glyphicon glyphicon-font" aria-hidden="true"> </span></button>
+
+    <button  onclick="black()" class="flat-butt flat-danger-butt2"/><span class="glyphicon glyphicon-font" aria-hidden="true"> </span></button>
+
+        <div class="circle"><span id="circleicon" class="glyphicon glyphicon-ok" aria-hidden="true"> </span></div>
+        <div class="circle2"><span id="circleicon2" class="glyphicon glyphicon-ok" aria-hidden="true"> </span></div>
+        <div class="circle3"><span id="circleicon3" class="glyphicon glyphicon-ok" aria-hidden="true"> </span></div>
+        <div class="circle4"><span id="circleicon4" class="glyphicon glyphicon-ok" aria-hidden="true"> </span></div>
+        </div>
+<br>
+        <image id="theimage" ></image>
+        <div   id="theimage2" >Preview</div>
+
+        </div>
+ </div>
+
+
+</div>
+    </body>
+</html>
+
