@@ -194,7 +194,6 @@ var copiedObject = cloneCanvas(canvas);
   var lineHeight = 50;
   var x = copiedObject.width / 2;
   var y = copiedObject.height / 2.5;
-  alert(y);
   var text = document.getElementById('textbox_id').value;
 
   wrapText(ctx, text, x, y, maxWidth, lineHeight);
