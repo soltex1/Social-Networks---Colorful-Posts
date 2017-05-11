@@ -63,23 +63,23 @@ function white(){
 
 function resize_text(max_w){
 
-    var canvas = document.getElementById('thecanvas');
-    var context = can.getContext('2d');
-    context.font = '16pt Rubik';
-    var maxWidth = max_w;
-    var lineHeight = 25;
-    var x = (canvas.width - maxWidth) / 2;
-    var y = canvas.height / 2;
-    var text = document.getElementById('textbox_id').value;
+  var canvas = document.getElementById('thecanvas');
+  var context = can.getContext('2d');
+  context.font = '16pt Rubik';
+  var maxWidth = max_w;
+  var lineHeight = 25;
+  var x = (canvas.width - maxWidth) / 2;
+  var y = canvas.height / 2;
+  var text = document.getElementById('textbox_id').value;
 
-    wrapText(context, text, x, y, maxWidth, lineHeight);
+  wrapText(context, text, x, y, maxWidth, lineHeight);
 
 }
 
 function draw(color_start, color_end){
 
   var canvas = document.getElementById("thecanvas");
-	var ctx = canvas.getContext("2d");
+  var ctx = canvas.getContext("2d");
   ctx.rect(0, 0, canvas.width, canvas.height);
 
   var grd = ctx.createLinearGradient(200, 0, canvas.width, canvas.height);
@@ -104,15 +104,16 @@ function draw(color_start, color_end){
 
 function to_image(){
 
- document.getElementById("theimage").src = document.getElementById("thecanvas").toDataURL("image/png");
+  document.getElementById("theimage").src = document.getElementById("thecanvas").toDataURL("image/png");
 
- $('#theimage2').css("visibility", "hidden");
- $('#theimage2').css("width", "0");
- $('#theimage2').css("height", "0");
+  $('#theimage2').css("visibility", "hidden");
+  $('#theimage2').css("width", "0");
+  $('#theimage2').css("height", "0");
 
 }
 
 function reset(){
+  
   document.getElementById("theimage").src = "";
   
   $('#theimage2').css("visibility", "visible");
@@ -173,15 +174,16 @@ function download(){
 
 function cloneCanvas(oldCanvas) {
 
-    var newCanvas = document.createElement('canvas');
-    var context = newCanvas.getContext('2d');
+  var newCanvas = document.createElement('canvas');
+  var context = newCanvas.getContext('2d');
 
-    newCanvas.width = oldCanvas.width;
-    newCanvas.height = oldCanvas.height;
+  newCanvas.width = oldCanvas.width;
+  newCanvas.height = oldCanvas.height;
 
-    context.drawImage(oldCanvas, 0, 0);
+  context.drawImage(oldCanvas, 0, 0);
 
-    return newCanvas;
+  return newCanvas;
+
 }
 
 function update_text(){
