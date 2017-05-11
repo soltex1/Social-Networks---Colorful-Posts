@@ -6,7 +6,7 @@
 
 ## Brief Description:
 
-Create beautiful posts for your social networks. Transform your text (limit 100 characters) into images with colorful background.
+Create beautiful posts for your social networks. Transform your text (limit 100 characters) into images with colorful backgrounds.
 
 ## Dependencies and Versions:
 
