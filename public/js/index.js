@@ -61,6 +61,20 @@ function white(){
   draw(global_color_start, global_color_end);
 }
 
+function change_color(){
+  console.log(global_current_color);
+  if (global_current_color == 'white'){
+    black();
+    $(".flat-danger-butt2").css("background","white");
+    $(".flat-danger-butt2").css("color","black");
+    $(".flat-danger-butt2").css("border","1px solid black");
+  }else{
+    white();
+    $(".flat-danger-butt2").css("background","black");
+    $(".flat-danger-butt2").css("color","white");
+  }
+}
+
 function resize_text(max_w){
 
   var canvas = document.getElementById('thecanvas');
